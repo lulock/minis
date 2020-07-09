@@ -40,7 +40,7 @@ playing = True
 
 def repeat_game(play_again):
     if play_again.strip().lower() == 'n':
-        print('\nThanks for playing! See you next time.')
+        print('\nThanks for playing! See ya next time.')
         return False
     elif play_again.strip().lower() == 'y':
         print('\nSweet!')
