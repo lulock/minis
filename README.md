@@ -13,3 +13,14 @@ When executed, the programme will ask to determine how many sides you would like
 - Handling Exceptions
 - Handling inputs
 - Time
+
+## Mini #2: Mad Libs! :stuck_out_tongue_closed_eyes:
+In this programme, the user is prompted to input certain word classes, like a noun, adjective, etc. A word list is accumulated and then the final text is printed with the user's suggested words in place of the blanks. Only one mad lib text is available.
+
+### Concepts within this mini:
+- String
+- Dictionary
+- Print
+- Loops
+- Handling inputs
+- Time
