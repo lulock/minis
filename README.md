@@ -29,6 +29,7 @@ In this programme, the user is prompted to input certain word classes, like a no
 In this programme, the user plays a game of Rock, Paper, Scissors with a computer. The computer generates one of the options at random per round. The game ends once one player reaches 3 points. 
 
 ### Concepts within this mini:
+- Random
 - String
 - Dictionary
 - Print
