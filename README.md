@@ -37,3 +37,16 @@ In this programme, the user plays a game of Rock, Paper, Scissors with a compute
 - Handling inputs
 - Handling exceptions
 - Time
+
+## Mini #4: WHAT DO YOU MEME? :speech_balloon:
+As my friends and I look for our go-to boardgames online, I decide to take a shot at stitching one of our favourites using Python: What Do You Meme? For now, this program will shuffle a "deck" of memes and a "deck" of texts to match. Display a meme image, deal 3 text cards to the player and request them to choose the most appropriate text to match the image for a final meme. The selected text will then print on top of the image and display the final composition.
+
+### Concepts within this mini:
+- Random
+- String
+- Pop()
+- Print
+- Handling inputs
+- Handling exceptions
+- Image
+- Altering images
