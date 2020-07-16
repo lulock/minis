@@ -83,7 +83,7 @@ def synthesise_sequence(length):
     return strand
 
 
-def print_dna(strand,complement):
+def print_dna(leading,lagging):
     """
     Function prints a given sequence of DNA bases and its complement
     
@@ -96,8 +96,8 @@ def print_dna(strand,complement):
     -------
     none
     """
-    link="'"*len(strand)
-    print(f"{strand}\n{link}\n{complement}")
+    link="'"*len(leading)
+    print(f"5' {leading} 3'\n   {link}\n3' {lagging} 5'")
 
 
 strand=synthesise_sequence(6.3)
