@@ -50,3 +50,13 @@ As my friends and I look for our go-to boardgames online, I decide to take a sho
 - Handling exceptions
 - Image
 - Altering images
+
+## Mini #5: DNA :microscope:
+
+
+### Concepts within this mini:
+- Random
+- String
+- Print
+- Dictionary
+- File read
