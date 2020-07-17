@@ -56,18 +56,18 @@ def deal_cards(deck, count):
     for i in range(count):
         cards.append(deck.pop())
     return cards, deck
- 
+
 meme = meme_generator(memes)
 response = requests.get(meme)
 img = Image.open(BytesIO(response.content))
 
 #resize image
-width = 500
+height = 300
 img_w = float(img.size[0])
 img_h = float(img.size[1])
-wpercent = float(width/(img_w))
-hsize = int((img_h)*(wpercent))
-rmg = img.resize((width,hsize), Image.ANTIALIAS)
+hpercent = float(height/(img_h))
+wsize = int((img_w)*(hpercent))
+rmg = img.resize((wsize,height), Image.ANTIALIAS)
 rmg.show()
 
 number=3
@@ -87,54 +87,74 @@ while (True):
     except:
         print("Sorry, that's not an option. Please insert corresponding number.")
 
+
+text_card = Image.new("RGBA", (200,300), (0,0,0))
+
 font = ImageFont.truetype("/usr/share/fonts/dejavu/DejaVuSans.ttf", 16)
-# updated_img = Image.new("RGBA", (200,200), (120,20,20))
-draw = ImageDraw.Draw(rmg)
 
 # dont allow for text overflow
 # Set boundaries along x
 # 20% to the left and 80% to the left for max floor division to return quotient 
-x_min = (rmg.size[0] * 5) // 100
-x_max = (rmg.size[0] * 80) // 100
+x_min = (text_card.size[0] * 7) // 100
+x_max = (text_card.size[0] * 80) // 100
 
-lines = []
-        
-# If the text width is smaller than the image width, then no need to split
-# just add it to the line list and return
-if font.getsize(winning_card)[0]  <= x_max:
-    lines.append(winning_card)
+
+text_width = font.getsize('winning_card')[0]
+text_height = font.getsize('hg')[1]
+
+def handle_text(text):
+    text_width = font.getsize(winning_card)[0]
     
-else:
-#split
-    words = winning_card.split(' ')
-    i = 0
-    # append every word to a line while its width is shorter than the image width
-    print(words)
-    while i < len(words):
-        line = ''
-        
-        while i < len(words) and font.getsize(line + words[i])[0] <= x_max:
-            
-            line = line + words[i]+ " "
-            i += 1
+    lines = []
 
-        lines.append(line)
+# If the string's full width is less than the black card's max-width boundary, then don't split it.
+    if text_width  <= x_max:
+        lines.append(text)
+        print("in min width")
+    else:
+    #split
+       words = text.split(' ')
+       i = 0
+       # append every word to a string while its width is shorter than the max-width boundary
+       while i < len(words):
+           line = ''
+           while i < len(words) and font.getsize(line + words[i])[0] <= x_max:
+              line = line + words[i] + " "
+              i += 1
+           lines.append(line)
+          
+    return lines
 
-line_height = font.getsize('hg')[1]
 
-x = x_min
-y = (rmg.size[1] * 10) //100   # 90% to the bottom
 
-for line in lines:
+def paste_text(card,lines,font):
+    x = (card.size[0] * 7) // 100
+    y = (card.size[1] * 5) //100   # 90% to the bottom
+    text_height = font.getsize('hg')[1]
+    text_draw = ImageDraw.Draw(card)
+    
+    for line in lines:
+        text_draw.text((x,y), line, fill=(250, 250, 250), font=font)
+        y = y + text_height    # update y-axis for new line
 
-    draw.text((x,y), line, fill=(209, 239, 8), font=font)
-    y = y + line_height    # update y-axis for new line
 
-print(lines)
+lines = handle_text(winning_card)
+paste_text(text_card, lines, font)
 
-rmg.save("a_test.png")
-rmg.show()
+text_card.save('text_card.png')
+text_card.show()
 
+
+def concat_height(img1, img2):
+    canvas = Image.new('RGB', (img1.width + img2.width, img1.height))
+    canvas.paste(img1, (0, 0))
+    canvas.paste(img2, (img1.width, 0))
+    return canvas
+
+
+final_wdym = concat_height(rmg, text_card)
+final_wdym.save('final_wdym.jpg')
+final_wdym.show()
 # print("player chose:\n")
 # print(f"{winning_card}")
 # print("\n")
