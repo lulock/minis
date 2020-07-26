@@ -60,3 +60,12 @@ As my friends and I look for our go-to boardgames online, I decide to take a sho
 - Print
 - Dictionary
 - File read
+
+## Mini # 6: Koch Curve and Fun with Fractals using Turtle :turtle:
+I came across fractals again yesterday and thought it would be a good Mini to code using Python's Turtle graphics library. A Fractal in mathematics is a curve or geometric shape that is made up of self-similar subsets. Fractals emerge frequently in nature, like in snowflakes. Fractal __dimension__ can be used to describe surface roughness (like the geographic borders of my 6th grade fictional island - Serendipity :woman_facepalming:) They are also very mathemagical and pretty and can be coded nicely using recursive functions!
+
+### Concepts within this mini:
+- Turtle
+- Recursion
+- Color
+
