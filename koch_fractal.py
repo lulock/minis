@@ -75,11 +75,13 @@ def main():
     pen_color(timmy,COLOUR_PICKER)
     
     for i in range(n):
-        timmy.speed(10 + i*i)
+        timmy.speed(n + n*i)
         move_turtle(timmy, x, y)
         koch_curve(timmy,300,i,(1/3))
         y -= (HEIGHT/n)
-        
+    
+    timmy.getscreen().getcanvas().postscript(file='timmy.eps', colormode='color')
+
     screen.exitonclick()
 
     timmy.done()
