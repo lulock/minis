@@ -126,7 +126,6 @@ def handle_text(text):
     return lines
 
 
-
 def paste_text(card,lines,font):
     x = (card.size[0] * 7) // 100
     y = (card.size[1] * 5) //100   # 90% to the bottom
