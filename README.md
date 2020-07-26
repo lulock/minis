@@ -73,5 +73,5 @@ I came across fractals again yesterday and thought it would be a good Mini to co
 - Recursion
 - Color
 
-<img src="https://github.com/lulock/minis/blob/master/img/timmy.jpg" width="400">
+<img src="https://github.com/lulock/minis/blob/master/img/timmy.jpg?raw=true" width="400">
 
