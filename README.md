@@ -39,7 +39,7 @@ In this programme, the user plays a game of Rock, Paper, Scissors with a compute
 - Time
 
 ## Mini #4: WHAT DO YOU MEME? :speech_balloon:
-As my friends and I look for our go-to boardgames online, I decide to take a shot at stitching one of our favourites using Python: What Do You Meme? For now, this program will shuffle a "deck" of memes and a "deck" of texts to match. Display a meme image, deal 3 text cards to the player and request them to choose the most appropriate text to match the image for a final meme. The selected text will then print on top of the image and display the final composition.
+As my friends and I look for our go-to boardgames online, I decide to take a shot at stitching one of our favourites using Python: What Do You Meme? For now, this program will shuffle a "deck" of memes and a "deck" of texts to match. Display a meme image, deal 3 text cards to the player and request them to choose the most appropriate text to match the image for a final meme. These three choices are printed to the console. Once a 'winning card' is selected, it will be printed onto a card and displayed. Then, this winning card will be concatenated with the original meme image and presented as a final winning meme.
 
 ### Concepts within this mini:
 - Random
@@ -49,7 +49,11 @@ As my friends and I look for our go-to boardgames online, I decide to take a sho
 - Handling inputs
 - Handling exceptions
 - Image
-- Altering images
+- Drawing text to an image
+- Concatenating images
+
+<img src="https://github.com/lulock/minis/blob/master/img/final_wdym.jpg?raw=true" width="400">
+
 
 ## Mini #5: DNA :microscope:
 
