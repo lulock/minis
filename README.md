@@ -62,3 +62,11 @@ I came across fractals again yesterday and thought it would be a good Mini to co
 | Concepts within this mini:|  Output |
 | :------------| :-------:|
 | <ul><li>Turtle</li><li>Recursion<li>Color</li></ul> |<img src="https://github.com/lulock/minis/blob/master/img/timmy.jpg?raw=true" width="400">
+
+## Mini # 7: Boids flocking simulation 🐦
+!!!!!!!
+
+
+| Concepts within this mini:|  Output |
+| :------------| :-------:|
+| <ul><li>_Collision Avoidance_ (TODO)</li><li>_Velocity Matching_ (TODO)<li>Flock Centering</li></ul> |<img src="https://github.com/lulock/minis/blob/master/img/boids.gif?raw=true" width="400">
