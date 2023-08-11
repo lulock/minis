@@ -70,3 +70,10 @@ I came across fractals again yesterday and thought it would be a good Mini to co
 | Concepts within this mini:|  Output |
 | :------------| :-------:|
 | <ul><li>_Collision Avoidance_</li><li>_Velocity Matching_<li>Flock Centering</li></ul> |<img src="https://github.com/lulock/minis/blob/master/img/boids.gif?raw=true" width="400">
+
+## Mini # 8: L-system 🌲
+
+
+| Concepts within this mini:|  Output |
+| :------------| :-------:|
+| <ul><li>_Grammars_</li><li>__<li>Rules</li><li>__<li>Recursion</li></ul> |<img src="https://github.com/lulock/minis/blob/master/img/l_system.PNG?raw=true" width="400">
