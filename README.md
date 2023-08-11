@@ -76,4 +76,4 @@ I came across fractals again yesterday and thought it would be a good Mini to co
 
 | Concepts within this mini:|  Output |
 | :------------| :-------:|
-| <ul><li>_Grammars_</li><li>__<li>Rules</li><li>__<li>Recursion</li></ul> |<img src="https://github.com/lulock/minis/blob/master/img/l_system.PNG?raw=true" width="400">
+| <ul><li>Grammars</li><li>Rules</li><li>Recursion</li></ul> |<img src="https://github.com/lulock/minis/blob/master/img/l_system.PNG?raw=true" width="400">
